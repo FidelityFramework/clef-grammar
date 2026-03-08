@@ -29,9 +29,6 @@
             "include": "#definition"
         },
         {
-            "include": "#abstract_definition"
-        },
-        {
             "include": "#attributes"
         },
         {
@@ -75,25 +72,25 @@
                     "match": "(\\^[[:alpha:]0-9'._]+)",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
                 {
-                    "name": "keyword.fsharp",
+                    "name": "keyword.clef",
                     "match": "\\b(and|when|or)\\b"
                 },
                 {
                     "begin": "(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "end": "(\\))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -106,13 +103,13 @@
                     "match": "(static member|member)\\s*([[:alpha:]0-9'`<>^._]+|``[[:alpha:]0-9' <>^._]+``)\\s*(:)",
                     "captures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "variable.fsharp"
+                            "name": "variable.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     }
                 },
@@ -160,13 +157,13 @@
                     "begin": "(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "end": "(\\))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -184,19 +181,19 @@
                     "begin": "(:)\\s*(\\()\\s*(static member|member)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "3": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "end": "(\\))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -204,13 +201,13 @@
                             "begin": "(\\()",
                             "beginCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "end": "(\\))",
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "patterns": [
@@ -223,7 +220,7 @@
                             "match": "(('|\\^)[[:alpha:]0-9'._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -236,11 +233,11 @@
                     ]
                 },
                 {
-                    "name": "keyword.fsharp",
-                    "match": "\\b(private|to|public|internal|function|yield!|yield|class|exception|match|delegate|of|new|in|as|if|then|else|elif|for|begin|end|inherit|do|let\\!|return\\!|return|interface|with|abstract|enum|member|try|finally|and|when|or|use|use\\!|struct|while|mutable|assert|base|done|downcast|downto|extern|fixed|global|lazy|upcast|not)(?!')\\b"
+                    "name": "keyword.clef",
+                    "match": "\\b(private|to|public|internal|function|yield!|yield|exception|match|of|in|as|if|then|else|elif|for|begin|end|do|let\\!|return\\!|return|with|enum|member|try|finally|and|when|or|use|use\\!|struct|while|mutable|assert|done|downto|extern|fixed|global|lazy|not)(?!')\\b"
                 },
                 {
-                    "name": "keyword.symbol.fsharp",
+                    "name": "keyword.symbol.clef",
                     "match": ":"
                 },
                 {
@@ -250,7 +247,7 @@
                     "match": "(('|\\^)[[:alpha:]0-9'._]+)",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -259,12 +256,12 @@
                     "end": "(>)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -272,7 +269,7 @@
                             "match": "(('|\\^)[[:alpha:]0-9'._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -289,12 +286,12 @@
                     "end": "(\\))",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -302,7 +299,7 @@
                             "match": "(([?[:alpha:]0-9'`^._ ]+))+",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -316,7 +313,7 @@
                     "comments": "Here we need the \\w modifier in order to check that the words are allowed",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -325,7 +322,7 @@
                     "comments": "Prevent captures of `|>` as a keyword when defining custom operator like `<|>`",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     }
                 },
@@ -339,12 +336,12 @@
             "end": "(\\|\\})",
             "beginCaptures": {
                 "1": {
-                    "name": "keyword.symbol.fsharp"
+                    "name": "keyword.symbol.clef"
                 }
             },
             "endCaptures": {
                 "1": {
-                    "name": "keyword.symbol.fsharp"
+                    "name": "keyword.symbol.clef"
                 }
             },
             "patterns": [
@@ -352,7 +349,7 @@
                     "match": "[[:alpha:]0-9'`^_ ]+(:)",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     }
                 },
@@ -360,7 +357,7 @@
                     "match": "([[:alpha:]0-9'`^_ ]+)",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -378,10 +375,10 @@
                     "match": "[[:alpha:]0-9'`^_ ]+(=)([[:alpha:]0-9'`^_ ]+)",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         }
                     }
                 },
@@ -390,12 +387,12 @@
                     "end": "(})",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -403,10 +400,10 @@
                             "match": "[[:alpha:]0-9'`^_ ]+(=)([[:alpha:]0-9'`^_ ]+)",
                             "captures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 },
                                 "2": {
-                                    "name": "variable.parameter.fsharp"
+                                    "name": "variable.parameter.clef"
                                 }
                             }
                         },
@@ -426,7 +423,7 @@
                     "match": "(([?[:alpha:]0-9'`^._ ]+))+",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -435,12 +432,12 @@
                     "end": "(\\))",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -448,7 +445,7 @@
                             "match": "(([?[:alpha:]0-9'`^._ ]+))+",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -470,12 +467,12 @@
                     "end": "(->)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.arrow.fsharp"
+                            "name": "keyword.symbol.arrow.clef"
                         }
                     },
                     "patterns": [
@@ -487,12 +484,12 @@
                             "end": "\\s*(?=(->))",
                             "beginCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.arrow.fsharp"
+                                    "name": "keyword.symbol.arrow.clef"
                                 }
                             },
                             "patterns": [
@@ -511,7 +508,7 @@
         "attributes": {
             "patterns": [
                 {
-                    "name": "support.function.attribute.fsharp",
+                    "name": "support.function.attribute.clef",
                     "begin": "\\[\\<",
                     "end": "\\>\\]|\\]",
                     "patterns": [
@@ -525,17 +522,17 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.block.markdown.fsharp",
+                    "name": "comment.block.markdown.clef",
                     "begin": "^\\s*(\\(\\*\\*(?!\\)))((?!\\*\\)).)*$",
                     "while": "^(?!\\s*(\\*)+\\)\\s*$)",
                     "beginCaptures": {
                         "1": {
-                            "name": "comment.block.fsharp"
+                            "name": "comment.block.clef"
                         }
                     },
                     "whileCaptures": {
                         "1": {
-                            "name": "comment.block.fsharp"
+                            "name": "comment.block.clef"
                         }
                     },
                     "patterns": [
@@ -545,28 +542,28 @@
                     ]
                 },
                 {
-                    "name": "comment.block.fsharp",
+                    "name": "comment.block.clef",
                     "begin": "(\\(\\*(?!\\)))",
                     "end": "(\\*+\\))",
                     "beginCaptures": {
                         "1": {
-                            "name": "comment.block.fsharp"
+                            "name": "comment.block.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "comment.block.fsharp"
+                            "name": "comment.block.clef"
                         }
                     },
                     "patterns": [
                         {
                             "comments": "Capture // when inside of (* *) like that the rule which capture comments starting by // is not trigger. See https://github.com/ionide/ionide-fsgrammar/issues/155",
-                            "name": "fast-capture.comment.line.double-slash.fsharp",
+                            "name": "fast-capture.comment.line.double-slash.clef",
                             "match": "//"
                         },
                         {
                             "comments": "Capture (*) when inside of (* *) so that it doesn't prematurely end the comment block.",
-                            "name": "fast-capture.comment.line.mul-operator.fsharp",
+                            "name": "fast-capture.comment.line.mul-operator.clef",
                             "match": "\\(\\*\\)"
                         },
                         {
@@ -575,16 +572,16 @@
                     ]
                 },
                 {
-                    "name": "comment.block.markdown.fsharp.end",
+                    "name": "comment.block.markdown.clef.end",
                     "match": "((?<!\\()(\\*)+\\))",
                     "captures": {
                         "1": {
-                            "name": "comment.block.fsharp"
+                            "name": "comment.block.clef"
                         }
                     }
                 },
                 {
-                    "name": "comment.line.markdown.fsharp",
+                    "name": "comment.line.markdown.clef",
                     "begin": "(?<![!%&+-.<=>?@^|/])///(?!/)",
                     "while": "(?<![!%&+-.<=>?@^|/])///(?!/)",
                     "patterns": [
@@ -594,7 +591,7 @@
                     ]
                 },
                 {
-                    "name": "comment.line.double-slash.fsharp",
+                    "name": "comment.line.double-slash.clef",
                     "match": "(?<![!%&+-.<=>?@^|/])//(.*$)"
                 }
             ]
@@ -602,51 +599,51 @@
         "constants": {
             "patterns": [
                 {
-                    "name": "keyword.symbol.fsharp",
+                    "name": "keyword.symbol.clef",
                     "match": "\\(\\)"
                 },
                 {
-                    "name": "constant.numeric.float.fsharp",
+                    "name": "constant.numeric.float.clef",
                     "match": "\\b-?[0-9][0-9_]*((\\.(?!\\.)([0-9][0-9_]*([eE][+-]??[0-9][0-9_]*)?)?)|([eE][+-]??[0-9][0-9_]*))"
                 },
                 {
-                    "name": "constant.numeric.integer.nativeint.fsharp",
+                    "name": "constant.numeric.integer.nativeint.clef",
                     "match": "\\b(-?((0(x|X)[0-9a-fA-F][0-9a-fA-F_]*)|(0(o|O)[0-7][0-7_]*)|(0(b|B)[01][01_]*)|([0-9][0-9_]*)))"
                 },
                 {
-                    "name": "constant.language.boolean.fsharp",
+                    "name": "constant.language.boolean.clef",
                     "match": "\\b(true|false)\\b"
                 },
                 {
-                    "name": "constant.other.fsharp",
-                    "match": "\\b(null|void)\\b"
+                    "name": "constant.other.clef",
+                    "match": "\\b(void)\\b"
                 }
             ]
         },
         "abstract_definition": {
-            "name": "abstract.definition.fsharp",
+            "name": "abstract.definition.clef",
             "begin": "\\b(static\\s+)?(abstract)\\s+(member)?(\\s+\\[\\<.*\\>\\])?\\s*([_[:alpha:]0-9,\\._`\\s]+)(<)?",
             "end": "\\s*(with)\\b|=|$",
             "beginCaptures": {
                 "1": {
-                    "name": "keyword.fsharp"
+                    "name": "keyword.clef"
                 },
                 "2": {
-                    "name": "keyword.fsharp"
+                    "name": "keyword.clef"
                 },
                 "3": {
-                    "name": "keyword.fsharp"
+                    "name": "keyword.clef"
                 },
                 "4": {
-                    "name": "support.function.attribute.fsharp"
+                    "name": "support.function.attribute.clef"
                 },
                 "5": {
-                    "name": "keyword.symbol.fsharp"
+                    "name": "keyword.symbol.clef"
                 }
             },
             "endCaptures": {
                 "1": {
-                    "name": "keyword.fsharp"
+                    "name": "keyword.clef"
                 }
             },
             "patterns": [
@@ -660,16 +657,16 @@
                     "match": "(\\?{0,1})([[:alpha:]0-9'`^._ ]+)\\s*(:)((?!with\\b)\\b([\\w0-9'`^._ ]+)){0,1}",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "4": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -678,7 +675,7 @@
                     "comments": "Here we need the \\w modifier in order to check that the words isn't blacklisted",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -700,19 +697,19 @@
                     "begin": "(:)\\s*(\\()\\s*(static member|member)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "3": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "end": "(\\))\\s*((?=,)|(?=\\=))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -720,7 +717,7 @@
                             "match": "(\\^[[:alpha:]0-9'._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -736,19 +733,19 @@
                     "begin": "(:)\\s*(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "end": "(\\)\\s*(([?[:alpha:]0-9'`^._ ]*)))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     },
                     "patterns": [
@@ -761,24 +758,24 @@
                     "begin": "(:)\\s*(\\^[[:alpha:]0-9'._]+)\\s*(when)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         },
                         "3": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "end": "(?=:)",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "keyword.fsharp",
+                            "name": "keyword.clef",
                             "match": "\\b(and|when|or)\\b"
                         },
                         {
@@ -786,27 +783,27 @@
                             "match": "([[:alpha:]0-9'^._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
                         {
-                            "name": "keyword.symbol.fsharp",
+                            "name": "keyword.symbol.clef",
                             "match": "(\\(|\\))"
                         }
                     ]
                 },
                 {
-                    "match": "(:)\\s*([?[:alpha:]0-9'`^._ ]+)(\\|\\s*(null))?",
+                    "match": "(:)\\s*([?[:alpha:]0-9'`^._ ]+)",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         },
                         "4": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -814,13 +811,13 @@
                     "match": "(->)\\s*(\\()?\\s*([?[:alpha:]0-9'`^._ ]+)*",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.arrow.fsharp"
+                            "name": "keyword.symbol.arrow.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "3": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -828,19 +825,19 @@
                     "begin": "(\\*)\\s*(\\()",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "end": "(\\)\\s*(([?[:alpha:]0-9'`^._ ]+))*)",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     },
                     "patterns": [
@@ -853,16 +850,16 @@
                     "begin": "(\\*)(\\s*([?[:alpha:]0-9'`^._ ]+))*",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     },
                     "end": "(?==)|(?=\\))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -878,12 +875,12 @@
                     "endComment": "The group (?<!:) prevent us from stopping on :> when using SRTP synthax",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -900,12 +897,12 @@
                     "end": "(})",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -928,32 +925,32 @@
         "definition": {
             "patterns": [
                 {
-                    "name": "binding.fsharp",
-                    "begin": "\\b(let mutable|static let mutable|static let|let inline|let|and inline|and|member val|member inline|static member inline|static member val|static member|default|member|override|let!)(\\s+rec|mutable)?(\\s+\\[\\<.*\\>\\])?\\s*(private|internal|public)?\\s+(\\[[^-=]*\\]|[_[:alpha:]]([_[:alpha:]0-9\\._]+)*|``[_[:alpha:]]([_[:alpha:]0-9\\._`\\s]+|(?<=,)\\s)*)?",
+                    "name": "binding.clef",
+                    "begin": "\\b(let mutable|static let mutable|static let|let inline|let|and inline|and|member inline|static member inline|static member|member|let!)(\\s+rec|mutable)?(\\s+\\[\\<.*\\>\\])?\\s*(private|internal|public)?\\s+(\\[[^-=]*\\]|[_[:alpha:]]([_[:alpha:]0-9\\._]+)*|``[_[:alpha:]]([_[:alpha:]0-9\\._`\\s]+|(?<=,)\\s)*)?",
                     "end": "\\s*((with inline|with)\\b|(=|\\n+=|(?<=\\=)))",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "3": {
-                            "name": "support.function.attribute.fsharp"
+                            "name": "support.function.attribute.clef"
                         },
                         "4": {
-                            "name": "storage.modifier.fsharp"
+                            "name": "storage.modifier.clef"
                         },
                         "5": {
-                            "name": "variable.fsharp"
+                            "name": "variable.clef"
                         }
                     },
                     "endCaptures": {
                         "2": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -963,17 +960,17 @@
                     ]
                 },
                 {
-                    "name": "binding.fsharp",
+                    "name": "binding.clef",
                     "begin": "\\b(use|use!|and|and!)\\s+(\\[[^-=]*\\]|[_[:alpha:]]([_[:alpha:]0-9\\._]+)*|``[_[:alpha:]]([_[:alpha:]0-9\\._`\\s]+|(?<=,)\\s)*)?",
                     "end": "\\s*(=)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -983,17 +980,17 @@
                     ]
                 },
                 {
-                    "name": "binding.fsharp",
+                    "name": "binding.clef",
                     "begin": "(?<=with|and)\\s*\\b((get|set)\\s*(?=\\())(\\[[^-=]*\\]|[_[:alpha:]]([_[:alpha:]0-9\\._]+)*|``[_[:alpha:]]([_[:alpha:]0-9\\._`\\s]+|(?<=,)\\s)*)?",
                     "end": "\\s*(=|\\n+=|(?<=\\=))",
                     "beginCaptures": {
                         "4": {
-                            "name": "variable.fsharp"
+                            "name": "variable.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1003,24 +1000,24 @@
                     ]
                 },
                 {
-                    "name": "binding.fsharp",
+                    "name": "binding.clef",
                     "begin": "\\b(static val mutable|val mutable|val inline|val)(\\s+rec|mutable)?(\\s+\\[\\<.*\\>\\])?\\s*(private|internal|public)?\\s+(\\[[^-=]*\\]|[_[:alpha:]]([_[:alpha:]0-9,\\._]+)*|``[_[:alpha:]]([_[:alpha:]0-9,\\._`\\s]+|(?<=,)\\s)*)?",
                     "end": "\\n$",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "3": {
-                            "name": "support.function.attribute.fsharp"
+                            "name": "support.function.attribute.clef"
                         },
                         "4": {
-                            "name": "storage.modifier.fsharp"
+                            "name": "storage.modifier.clef"
                         },
                         "5": {
-                            "name": "variable.fsharp"
+                            "name": "variable.clef"
                         }
                     },
                     "patterns": [
@@ -1030,20 +1027,20 @@
                     ]
                 },
                 {
-                    "name": "binding.fsharp",
+                    "name": "binding.clef",
                     "begin": "\\b(new)\\b\\s+(\\()",
                     "end": "(\\))",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1057,17 +1054,17 @@
         "du_declaration": {
             "patterns": [
                 {
-                    "name": "du_declaration.fsharp",
+                    "name": "du_declaration.clef",
                     "begin": "\\b(of)\\b",
                     "end": "$|(\\|)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1078,13 +1075,13 @@
                             "match": "([[:alpha:]0-9'`<>^._]+|``[[:alpha:]0-9' <>^._]+``)\\s*(:)\\s*([[:alpha:]0-9'`<>^._]+|``[[:alpha:]0-9' <>^._]+``)",
                             "captures": {
                                 "1": {
-                                    "name": "variable.parameter.fsharp"
+                                    "name": "variable.parameter.clef"
                                 },
                                 "2": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 },
                                 "3": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1092,7 +1089,7 @@
                             "match": "(``([[:alpha:]0-9'^._ ]+)``|[[:alpha:]0-9'`^._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1113,19 +1110,19 @@
                     "match": "\\b(private|public|internal)\\b"
                 },
                 {
-                    "name": "keyword.fsharp",
-                    "match": "\\b(private|to|public|internal|function|class|exception|delegate|of|new|as|begin|end|inherit|let!|interface|abstract|enum|member|and|when|or|use|use\\!|struct|mutable|assert|base|done|downcast|downto|extern|fixed|global|lazy|upcast|not)(?!')\\b"
+                    "name": "keyword.clef",
+                    "match": "\\b(private|to|public|internal|function|exception|of|as|begin|end|let!|enum|member|and|when|or|use|use\\!|struct|mutable|assert|done|downto|extern|fixed|global|lazy|not)(?!')\\b"
                 },
                 {
                     "name": "keyword.control",
                     "match": "\\b(match|yield|yield!|with|if|then|else|elif|for|in|return!|return|try|finally|while|do)(?!')\\b"
                 },
                 {
-                    "name": "keyword.symbol.arrow.fsharp",
+                    "name": "keyword.symbol.arrow.clef",
                     "match": "(\\->|\\<\\-)"
                 },
                 {
-                    "name": "keyword.symbol.fsharp",
+                    "name": "keyword.symbol.clef",
                     "match": "[.?]*(&&&|\\|\\|\\||\\^\\^\\^|~~~|~\\+|~\\-|<<<|>>>|\\|>|:>|:\\?>|:|\\[|\\]|\\;|<>|=|@|\\|\\||&&|&|%|{|}|\\||_|\\.\\.|\\,|\\+|\\-|\\*|\\/|\\^|\\!|\\>|\\>\\=|\\>\\>|\\<|\\<\\=|\\(|\\)|\\<\\<)[.?]*"
                 }
             ]
@@ -1133,65 +1130,65 @@
         "modules": {
             "patterns": [
                 {
-                    "name": "entity.name.section.fsharp",
+                    "name": "entity.name.section.clef",
                     "begin": "\\b(namespace global)|\\b(namespace|module)\\s*(public|internal|private|rec)?\\s+([[:alpha:]|``][[:alpha:]0-9'_. ]*)",
                     "end": "(\\s?=|\\s|$)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "3": {
-                            "name": "storage.modifier.fsharp"
+                            "name": "storage.modifier.clef"
                         },
                         "4": {
-                            "name": "entity.name.section.fsharp"
+                            "name": "entity.name.section.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "entity.name.section.fsharp",
+                            "name": "entity.name.section.clef",
                             "match": "(\\.)([A-Z][[:alpha:]0-9'_]*)",
                             "captures": {
                                 "1": {
-                                    "name": "punctuation.separator.namespace-reference.fsharp"
+                                    "name": "punctuation.separator.namespace-reference.clef"
                                 },
                                 "2": {
-                                    "name": "entity.name.section.fsharp"
+                                    "name": "entity.name.section.clef"
                                 }
                             }
                         }
                     ]
                 },
                 {
-                    "name": "namespace.open.fsharp",
+                    "name": "namespace.open.clef",
                     "begin": "\\b(open type|open)\\s+([[:alpha:]|``][[:alpha:]0-9'_]*)(?=(\\.[A-Z][[:alpha:]0-9_]*)*)",
                     "end": "(\\s|$)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "entity.name.section.fsharp"
+                            "name": "entity.name.section.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "entity.name.section.fsharp",
+                            "name": "entity.name.section.clef",
                             "match": "(\\.)([[:alpha:]][[:alpha:]0-9'_]*)",
                             "captures": {
                                 "1": {
-                                    "name": "punctuation.separator.namespace-reference.fsharp"
+                                    "name": "punctuation.separator.namespace-reference.clef"
                                 },
                                 "2": {
-                                    "name": "entity.name.section.fsharp"
+                                    "name": "entity.name.section.clef"
                                 }
                             }
                         },
@@ -1201,33 +1198,33 @@
                     ]
                 },
                 {
-                    "name": "namespace.alias.fsharp",
+                    "name": "namespace.alias.clef",
                     "begin": "^\\s*(module)\\s+([A-Z][[:alpha:]0-9'_]*)\\s*(=)\\s*([A-Z][[:alpha:]0-9'_]*)",
                     "end": "(\\s|$)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.namespace.fsharp"
+                            "name": "entity.name.type.namespace.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "4": {
-                            "name": "entity.name.section.fsharp"
+                            "name": "entity.name.section.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "entity.name.section.fsharp",
+                            "name": "entity.name.section.clef",
                             "match": "(\\.)([A-Z][[:alpha:]0-9'_]*)",
                             "captures": {
                                 "1": {
-                                    "name": "punctuation.separator.namespace-reference.fsharp"
+                                    "name": "punctuation.separator.namespace-reference.clef"
                                 },
                                 "2": {
-                                    "name": "entity.name.section.fsharp"
+                                    "name": "entity.name.section.clef"
                                 }
                             }
                         }
@@ -1238,38 +1235,38 @@
         "strings": {
             "patterns": [
                 {
-                    "name": "string.quoted.literal.fsharp",
+                    "name": "string.quoted.literal.clef",
                     "begin": "(?=[^\\\\])(@\")",
                     "end": "(\")(?!\")",
                     "beginCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.begin.fsharp"
+                            "name": "punctuation.definition.string.begin.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.end.fsharp"
+                            "name": "punctuation.definition.string.end.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "constant.character.string.escape.fsharp",
+                            "name": "constant.character.string.escape.clef",
                             "match": "\"(\")"
                         }
                     ]
                 },
                 {
-                    "name": "string.quoted.triple.fsharp",
+                    "name": "string.quoted.triple.clef",
                     "begin": "(?=[^\\\\])(\"\"\")",
                     "end": "(\"\"\")",
                     "beginCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.begin.fsharp"
+                            "name": "punctuation.definition.string.begin.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.end.fsharp"
+                            "name": "punctuation.definition.string.end.clef"
                         }
                     },
                     "patterns": [
@@ -1279,30 +1276,30 @@
                     ]
                 },
                 {
-                    "name": "string.quoted.double.fsharp",
+                    "name": "string.quoted.double.clef",
                     "begin": "(?=[^\\\\])(\")",
                     "end": "(\")",
                     "beginCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.begin.fsharp"
+                            "name": "punctuation.definition.string.begin.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "punctuation.definition.string.end.fsharp"
+                            "name": "punctuation.definition.string.end.clef"
                         }
                     },
                     "patterns": [
                         {
-                            "name": "punctuation.separator.string.ignore-eol.fsharp",
+                            "name": "punctuation.separator.string.ignore-eol.clef",
                             "match": "\\\\$[ \\t]*"
                         },
                         {
-                            "name": "constant.character.string.escape.fsharp",
+                            "name": "constant.character.string.escape.clef",
                             "match": "\\\\(['\"\\\\abfnrtv]|([01][0-9][0-9]|2[0-4][0-9]|25[0-5])|(x[0-9a-fA-F]{2})|(u[0-9a-fA-F]{4})|(U00(0[0-9a-fA-F]|10)[0-9a-fA-F]{4}))"
                         },
                         {
-                            "name": "invalid.illegal.character.string.fsharp",
+                            "name": "invalid.illegal.character.string.clef",
                             "match": "\\\\(([0-9]{1,3})|(x[^\\s]{0,2})|(u[^\\s]{0,4})|(U[^\\s]{0,8})|[^\\s])"
                         },
                         {
@@ -1315,11 +1312,11 @@
         "string_formatter": {
             "patterns": [
                 {
-                    "name": "entity.name.type.format.specifier.fsharp",
+                    "name": "entity.name.type.format.specifier.clef",
                     "match": "(%0?-?(\\d+)?((a|t)|(\\.\\d+)?(f|F|e|E|g|G|M)|(b|c|s|d|i|x|X|o|u)|(s|b|O)|(\\+?A)))",
                     "captures": {
                         "1": {
-                            "name": "keyword.format.specifier.fsharp"
+                            "name": "keyword.format.specifier.clef"
                         }
                     }
                 }
@@ -1328,17 +1325,17 @@
         "variables": {
             "patterns": [
                 {
-                    "name": "keyword.symbol.fsharp",
+                    "name": "keyword.symbol.clef",
                     "match": "\\(\\)"
                 },
                 {
                     "match": "(\\?{0,1})(``[[:alpha:]0-9'`^:,._ ]+``|(?!private|struct\\b)\\b[\\w[:alpha:]0-9'`<>^._ ]+)",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         }
                     }
                 }
@@ -1351,18 +1348,18 @@
                     "end": "(>)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.arrow.fsharp"
+                            "name": "keyword.symbol.arrow.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1370,7 +1367,7 @@
                             "match": "([[:alpha:]0-9'`^._ ]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1383,10 +1380,10 @@
                     "match": "\\s*(->)\\s*(?!with|get|set\\b)\\b([\\w0-9'`^._]+)",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.arrow.fsharp"
+                            "name": "keyword.symbol.arrow.clef"
                         },
                         "2": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -1398,24 +1395,24 @@
                     "end": "(>)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "4": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "5": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     },
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1423,7 +1420,7 @@
                             "match": "([[:alpha:]0-9'`^._ ]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1447,19 +1444,19 @@
                     "begin": "(:)\\s*(\\()\\s*(static member|member)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "3": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     },
                     "end": "(\\))\\s*((?=,)|(?=\\=))",
                     "endCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1467,13 +1464,13 @@
                             "begin": "(\\()",
                             "beginCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "end": "(\\))",
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "patterns": [
@@ -1486,7 +1483,7 @@
                             "match": "(\\^[[:alpha:]0-9'._]+)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1502,35 +1499,35 @@
                     "match": "(\\^[[:alpha:]0-9'._]+)",
                     "captures": {
                         "1": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
                 {
-                    "name": "keyword.fsharp",
+                    "name": "keyword.clef",
                     "match": "\\b(and|when|or)\\b"
                 },
                 {
-                    "name": "keyword.symbol.fsharp",
+                    "name": "keyword.symbol.clef",
                     "match": "(\\(|\\))"
                 },
                 {
-                    "match": "(\\?{0,1})([[:alpha:]0-9'`^._]+|``[[:alpha:]0-9'`^:,._ ]+``)\\s*(:{0,1})(\\s*([?[:alpha:]0-9'`<>._ ]+)){0,1}(\\|\\s*(null))?",
+                    "match": "(\\?{0,1})([[:alpha:]0-9'`^._]+|``[[:alpha:]0-9'`^:,._ ]+``)\\s*(:{0,1})(\\s*([?[:alpha:]0-9'`<>._ ]+)){0,1}",
                     "captures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "2": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         },
                         "3": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "4": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         },
                         "7": {
-                            "name": "entity.name.type.fsharp"
+                            "name": "entity.name.type.clef"
                         }
                     }
                 },
@@ -1542,17 +1539,17 @@
         "double_tick": {
             "patterns": [
                 {
-                    "name": "variable.other.binding.fsharp",
+                    "name": "variable.other.binding.clef",
                     "match": "(``)([^`]*)(``)",
                     "captures": {
                         "1": {
-                            "name": "string.quoted.single.fsharp"
+                            "name": "string.quoted.single.clef"
                         },
                         "2": {
-                            "name": "variable.other.binding.fsharp"
+                            "name": "variable.other.binding.clef"
                         },
                         "3": {
-                            "name": "string.quoted.single.fsharp"
+                            "name": "string.quoted.single.clef"
                         }
                     }
                 }
@@ -1561,35 +1558,35 @@
         "records": {
             "patterns": [
                 {
-                    "name": "record.fsharp",
+                    "name": "record.clef",
                     "begin": "\\b(type)[\\s]+(private|internal|public)?\\s*",
                     "end": "\\s*((with)|((as)\\s+([[:alpha:]0-9']+))|(=)|[\\n=]|(\\(\\)))",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "2": {
-                            "name": "storage.modifier.fsharp"
+                            "name": "storage.modifier.clef"
                         }
                     },
                     "endCaptures": {
                         "2": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "3": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "4": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         },
                         "5": {
-                            "name": "variable.parameter.fsharp"
+                            "name": "variable.parameter.clef"
                         },
                         "6": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         },
                         "7": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "patterns": [
@@ -1603,7 +1600,7 @@
                             "match": "([[:alpha:]0-9'^._]+|``[[:alpha:]0-9'`^:,._ ]+``)",
                             "captures": {
                                 "1": {
-                                    "name": "entity.name.type.fsharp"
+                                    "name": "entity.name.type.clef"
                                 }
                             }
                         },
@@ -1612,12 +1609,12 @@
                             "end": "((?<!:)>)",
                             "beginCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "patterns": [
@@ -1625,25 +1622,25 @@
                                     "match": "(('|\\^)``[[:alpha:]0-9`^:,._ ]+``|('|\\^)[[:alpha:]0-9`^:._]+)",
                                     "captures": {
                                         "1": {
-                                            "name": "entity.name.type.fsharp"
+                                            "name": "entity.name.type.clef"
                                         }
                                     }
                                 },
                                 {
-                                    "name": "keyword.fsharp",
-                                    "match": "\\b(interface|with|abstract|and|when|or|not|struct|equality|comparison|unmanaged|delegate|enum)\\b"
+                                    "name": "keyword.clef",
+                                    "match": "\\b(with|and|when|or|not|struct|equality|comparison|unmanaged|enum)\\b"
                                 },
                                 {
                                     "begin": "(\\()",
                                     "end": "(\\))",
                                     "beginCaptures": {
                                         "1": {
-                                            "name": "keyword.symbol.fsharp"
+                                            "name": "keyword.symbol.clef"
                                         }
                                     },
                                     "endCaptures": {
                                         "1": {
-                                            "name": "keyword.symbol.fsharp"
+                                            "name": "keyword.symbol.clef"
                                         }
                                     },
                                     "patterns": [
@@ -1651,7 +1648,7 @@
                                             "match": "(static member|member|new)",
                                             "captures": {
                                                 "1": {
-                                                    "name": "keyword.fsharp"
+                                                    "name": "keyword.clef"
                                                 }
                                             }
                                         },
@@ -1665,7 +1662,7 @@
                                     "comments": "Here we need the \\w modifier in order to check that the words isn't blacklisted",
                                     "captures": {
                                         "1": {
-                                            "name": "entity.name.type.fsharp"
+                                            "name": "entity.name.type.clef"
                                         }
                                     }
                                 },
@@ -1678,7 +1675,7 @@
                             "match": "\\s*(private|internal|public)",
                             "captures": {
                                 "1": {
-                                    "name": "storage.modifier.fsharp"
+                                    "name": "storage.modifier.clef"
                                 }
                             }
                         },
@@ -1687,12 +1684,12 @@
                             "end": "\\s*(?=(=)|[\\n=]|(\\(\\))|(as))",
                             "beginCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "patterns": [
@@ -1714,7 +1711,7 @@
                     "begin": "(\\{)",
                     "beginCaptures": {
                         "1": {
-                            "name": "keyword.symbol.fsharp"
+                            "name": "keyword.symbol.clef"
                         }
                     },
                     "end": "(?<=\\})",
@@ -1726,16 +1723,16 @@
                             "begin": "(((mutable)\\s[[:alpha:]]+)|[[:alpha:]0-9'`<>^._]*)\\s*((?<!:):(?!:))\\s*",
                             "beginCaptures": {
                                 "3": {
-                                    "name": "keyword.fsharp"
+                                    "name": "keyword.clef"
                                 },
                                 "4": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "end": "$|(;|\\})",
                             "endCaptures": {
                                 "1": {
-                                    "name": "keyword.symbol.fsharp"
+                                    "name": "keyword.symbol.clef"
                                 }
                             },
                             "patterns": [
@@ -1746,7 +1743,7 @@
                                     "match": "([[:alpha:]0-9'`^_ ]+)",
                                     "captures": {
                                         "1": {
-                                            "name": "entity.name.type.fsharp"
+                                            "name": "entity.name.type.clef"
                                         }
                                     }
                                 },
@@ -1795,11 +1792,11 @@
         "cexprs": {
             "patterns": [
                 {
-                    "name": "cexpr.fsharp",
-                    "match": "\\b(async|seq|promise|task|maybe|asyncMaybe|controller|scope|application|pipeline)(?=\\s*\\{)",
+                    "name": "cexpr.clef",
+                    "match": "\\b(seq|promise|maybe|controller|scope|application|pipeline)(?=\\s*\\{)",
                     "captures": {
                         "0": {
-                            "name": "keyword.fsharp"
+                            "name": "keyword.clef"
                         }
                     }
                 }
@@ -1808,11 +1805,11 @@
         "chars": {
             "patterns": [
                 {
-                    "name": "char.fsharp",
+                    "name": "char.clef",
                     "match": "('\\\\?.')",
                     "captures": {
                         "1": {
-                            "name": "string.quoted.single.fsharp"
+                            "name": "string.quoted.single.clef"
                         }
                     }
                 }
@@ -1821,7 +1818,7 @@
         "text": {
             "patterns": [
                 {
-                    "name": "text.fsharp",
+                    "name": "text.clef",
                     "match": "\\\\"
                 }
             ]
@@ -1829,7 +1826,7 @@
         "compiler_directives": {
             "patterns": [
                 {
-                    "name": "keyword.control.directive.fsharp",
+                    "name": "keyword.control.directive.clef",
                     "match": "\\s?(#if|#elif|#elseif|#else|#endif|#light|#nowarn|#warnon)",
                     "captures": {}
                 }
