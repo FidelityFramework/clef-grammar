@@ -599,6 +599,41 @@
         "constants": {
             "patterns": [
                 {
+                    "name": "meta.measure.literal.clef",
+                    "begin": "\\b(?:([0-9][0-9_]*(?:\\.(?!\\.)[0-9_]*(?:[eE][+-]?[0-9_]+)?|[eE][+-]?[0-9_]+))|([0-9][0-9_]*))(<)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "constant.numeric.float.clef"
+                        },
+                        "2": {
+                            "name": "constant.numeric.integer.nativeint.clef"
+                        },
+                        "3": {
+                            "name": "keyword.symbol.clef"
+                        }
+                    },
+                    "end": "(>)|$",
+                    "endCaptures": {
+                        "1": {
+                            "name": "keyword.symbol.clef"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "name": "entity.name.type.clef",
+                            "match": "``[^`]+``|[[:alpha:]_][[:alnum:]_\\x27.]*"
+                        },
+                        {
+                            "name": "keyword.symbol.clef",
+                            "match": "[*/^()+-]"
+                        },
+                        {
+                            "name": "constant.numeric.integer.nativeint.clef",
+                            "match": "[0-9]+"
+                        }
+                    ]
+                },
+                {
                     "name": "keyword.symbol.clef",
                     "match": "\\(\\)"
                 },
